@@ -10,20 +10,21 @@ package com.mycompany.segitiga;
  * @author praktikan
  */
 public class Segitiga {
-    double a;
-    double t;
-    double s2;
-    double s3 ;
-    double luas;
-    double keliling;
+    int a;
+    int t;
+    int s2;
+    int s3 ;
+    int luas;
+    int keliling;
 
     public Segitiga() {
     }
 
     
-    public Segitiga(double a, double t) {
+    public Segitiga(int a, int t) {
         this.a = a;
         this.t = t;
+ 
     }
     
     
@@ -33,7 +34,7 @@ public class Segitiga {
         return a;
     }
 
-    public void setA(double a) {
+    public void setA(int a) {
         this.a = a;
     }
 
@@ -41,7 +42,7 @@ public class Segitiga {
         return t;
     }
 
-    public void setT(double t) {
+    public void setT(int t) {
         this.t = t;
     }
 
@@ -49,7 +50,7 @@ public class Segitiga {
         return s2;
     }
 
-    public void setS2(double s2) {
+    public void setS2(int s2) {
         this.s2 = s2;
     }
 
@@ -57,25 +58,25 @@ public class Segitiga {
         return s3;
     }
 
-    public void setS3(double s3) {
+    public void setS3(int s3) {
         this.s3 = s3;
     }
 
     public double getLuas() {
         luas = this.a * this.t /2 ;
-        return luas;
+        return (int)luas;
     }
 
-    public void setLuas(double luas) {
+    public void setLuas(int luas) {
         this.luas = luas;
     }
 
     public double getKeliling() {
         keliling = this.a + this.s2 + this.s3 ;
-        return keliling;
+        return (int) keliling;
     }
 
-    public void setKeliling(double keliling) {
+    public void setKeliling(int keliling) {
         this.keliling = keliling;
     }
     

@@ -11,17 +11,21 @@ package com.mycompany.segitiga;
  */
 public class Segi3Siku extends Segitiga{
 
-    double miring = Math.pow( getA()*getA() + getT()*getT(), 0.5) ;
+    
     public Segi3Siku() {
         setA(4);
         setT(3);
+        setS2(3);
+        setS3((int)Math.pow( getA()*getA() + getT()*getT(), 0.5));
     }
 
-    public Segi3Siku(double a, double t) {
+    public Segi3Siku(int a, int t) {
         super(a, t);
         setS2(t);
-        setS3(miring);
+        setS3((int)Math.pow( getA()*getA() + getT()*getT(), 0.5));
     }
+    
+    
 
     @Override
     public String toString() {
